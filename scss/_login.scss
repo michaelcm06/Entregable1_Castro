@@ -1,0 +1,55 @@
+@import 'colores';
+$form-bg-color: $purple;
+$form-border: 1px solid #ccc;
+$form-padding: 20px;
+$form-border-radius: 5px;
+
+$label-display: block;
+$label-margin-bottom: 10px;
+
+$input-display: block;
+$input-margin-bottom: 10px;
+$input-border-radius: 5px;
+
+$button-bg-color: #4CAF50;
+$button-color: white;
+$button-padding: 10px 20px;
+$button-border: none;
+$button-border-radius: 5px;
+$button-cursor: pointer;
+
+$button-hover-bg-color: #45a049;
+
+.login {
+    form {
+        background-color: $form-bg-color;
+        border: $form-border;
+        padding: $form-padding;
+        border-radius: $form-border-radius;
+
+        label {
+            display: $label-display;
+            margin-bottom: $label-margin-bottom;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            display: $input-display;
+            margin-bottom: $input-margin-bottom;
+            border-radius: $input-border-radius;
+        }
+
+        input[type="button"] {
+            background-color: $button-bg-color;
+            color: $button-color;
+            padding: $button-padding;
+            border: $button-border;
+            border-radius: $button-border-radius;
+            cursor: $button-cursor;
+
+            &:hover {
+                background-color: $button-hover-bg-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MichPets</title>
+    <link rel="shortcut icon" href="./assets/icons/michpets.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" value="Este pagina web se dedica a la venta y distribucion de productos de mascotas">
+    <meta name="keywords" value="mascotas, perros, gatos, servicios, juguetes">
+    <meta name="author" content="Michael Castro">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Itim&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="p-3 text-bg fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../index.html"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img src="../assets/img/michpets.jpg" alt="icono Inicio" class="bi me-2" width="60" height="60"
+                            role="img" aria-label="Bootstrap"> </img>
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="../index.html" class="nav-link px-2 text-black">Inicio</a></li>
+                        <li><a href="#" class="nav-link px-2 text-black">Perros</a></li>
+                        <li><a href="./gatos.html" class="nav-link px-2 text-black">Gatos</a></li>
+                        <li><a href="./quienessomos.html" class="nav-link px-2 text-black">Quienes Somos</a></li>
+                        <li><a href="./servicios.html" class="nav-link px-2 text-black">Servicios</a></li>
+                    </ul>
+
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control form-control-dark text-bg-light"
+                            placeholder="Que Necesita tu mascota?" aria-label="Search">
+                    </form>
+
+                    <div class="text-end">
+                        <button onclick="window.location.href='./pages/login.html'" type="button"
+                            class="btn btn-outline-light me-2">Login</button>
+                        <button onclick="window.location.href='./pages/login.html'" type="button"
+                            class="btn btn-warning">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="contenedor-s sobre-nosotros">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="../assets/img/perro.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                            loading="lazy" width="700" height="500">
+                    </div>
+                    <div class="col-lg-6 colap">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Perros</h1>
+                        <p class="lead">Los perros son animales leales y sociables que han sido domesticados por los
+                            humanos desde hace más de 15.000 años. Su capacidad para comunicarse con los humanos es
+                            asombrosa, y pueden interpretar tanto el lenguaje verbal como no verbal de sus dueños.
+                            Además, los perros son capaces de detectar enfermedades como la diabetes y el cáncer
+                            mediante su olfato altamente desarrollado. Son animales extremadamente adaptables y pueden
+                            ser entrenados para una amplia variedad de trabajos, desde perros de servicio para personas
+                            con discapacidades hasta perros policías y militares. Los perros son, sin duda, uno de los
+                            animales más queridos y valorados por los seres humanos.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <div class="container-fluid my-5">
+                <h1 class="text-center fw-bold mb-3">Productos</h1>
+                <div class="row mt-5">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida1.jpg" alt="Comida para perros marca max light"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA MAX ADULTO</h2>
+                                    <div class="card-body-in">
+                                        <h3>$250.200</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida2.jpg"
+                                    alt="Comida para perros marca chunky adulto sabor a pollo" class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA CHUNKY</h2>
+                                    <div class="card-body-in">
+                                        <h3>$183.500</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida3.jpg" alt="Comida para perros marca dog chow"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA DOG CHOW</h2>
+                                    <div class="card-body-in">
+                                        <h3>$188.900</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida4.jpg" alt="Comida para perros marca hills liver care"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA HILLS</h2>
+                                    <div class="card-body-in">
+                                        <h3>$430.320</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida5.jpg" alt="Comida para perros marca hills science diet"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA HILLS</h2>
+                                    <div class="card-body-in">
+                                        <h3>$463.300</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida6.jpg" alt="Comida para perros marca nutra-nuggets"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA NUTRA</h2>
+                                    <div class="card-body-in">
+                                        <h3>$198.400</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida7.jpg" alt="Comida para perros marca chunky adulto"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA CHUNKY</h2>
+                                    <div class="card-body-in">
+                                        <h3>$119.900</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../assets/img/comida8.jpg" alt="Comida para perros marca Agility gold"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h2>COMIDA AGILITY</h2>
+                                    <div class="card-body-in">
+                                        <h3>$56.300</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <img src="../assets/img/michpets.jpg" class="bi me-2" width="100%" height="90%" role="img"
+                        aria-label="Bootstrap"> </img>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h4>Acerca de</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h4>Suscribete a nuestras noticias</h4>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Correo Electronico</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Correo Electronico "
+                                required>
+                            <button class="btn text-light" type="submit"
+                                style="background-color: #b191dc">Suscribete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2023 MichPets, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>
