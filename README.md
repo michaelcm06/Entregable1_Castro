@@ -1,2 +1,2 @@
-# PF_Castro_Montano
-Proyecto final curso Desarrollo web coder house
+# Entrega1_Castro_Montano
+Entrega 1 curso JavaScript coder house
