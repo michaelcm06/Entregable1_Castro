@@ -1,3 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b191dc;
+  border-radius: 0.1em;
+}
+
 /* HEADER */
 .p-3 {
   display: inline-block;
@@ -16,23 +36,17 @@
   overflow: auto;
   padding: 0% 1% 0% 1%;
 }
+.p-3 .text-end {
+  display: flex;
+  justify-content: end;
+  justify-content: space-between;
+}
 .p-3 .text-end img {
   width: 25px;
 }
-.p-3 .text-end .popup {
-  display: none;
-  position: absolute;
-  top: 360px;
-  left: 88.5%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 500px;
-  background-color: white;
-  border: 1px solid black;
-  padding: 20px;
-}
-.p-3 .text-end .popup.active {
-  display: block;
+.p-3 .text-end .menuItem {
+  display: flex;
+  position: end;
 }
 
 .banner-prin {
@@ -84,6 +98,393 @@
   background-color: #45a049;
 }
 
+.seccionProductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.card {
+  height: 25em;
+  width: 20em;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cardImagen {
+  position: relative;
+  height: 21em;
+  width: 20em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 3em;
+  margin-right: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descrip {
+  position: relative;
+  height: 21em;
+  width: 18em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 3em;
+  margin-right: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImagen img {
+  height: 80%;
+  object-fit: cover;
+}
+
+.capa {
+  position: relative;
+  font-weight: bold;
+  height: 21em;
+  width: 18em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 3em;
+  margin-right: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFooter {
+  height: 4em;
+  width: 20em;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+.cardFooter .verDetalles,
+.cardFooter .precio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #b191dc;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.cardFooter .botonComprar {
+  width: 20px;
+  border: none;
+  box-shadow: none;
+}
+
+.precio {
+  font-size: 1.2em;
+}
+
+.verDetalles,
+.botonComprar {
+  cursor: pointer;
+}
+
+.verDetalles:hover,
+.botonComprar:hover {
+  background-color: #26428B;
+  transition: 0.5s ease;
+}
+
+.cardFooterImagen {
+  height: 1.25em;
+}
+
+.carritoClass {
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  width: 60%;
+  top: 0;
+  right: 0px;
+  opacity: 0;
+  z-index: -10;
+}
+
+.carritoClass:target {
+  opacity: 1;
+  z-index: 10;
+}
+
+.carritoClass.hidden {
+  display: none;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100vh;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #b191dc;
+  color: #000000;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.modalHeaderTitle {
+  font-family: "Carter One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.75rem;
+  color: #000000;
+}
+
+.modalHeaderImagen {
+  margin-left: 0.4em;
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.modalHeaderButton {
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  transition: all 0.5s ease;
+}
+
+.modalHeaderButton:hover {
+  transform: scale(1.5);
+}
+
+.modalContent {
+  flex-grow: 1;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  padding-left: 2em;
+  padding-right: 1.4em;
+}
+
+.modalContent::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 0.3em;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background-color: #b191dc;
+  border-radius: 0.1em;
+}
+
+.modalProduct {
+  display: flex;
+  align-items: center;
+  box-shadow: 1px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.modalProductImagen {
+  display: inline-block;
+  margin-right: 1em;
+  height: 10em;
+  width: 10em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modalProductImagen img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalProductNombre {
+  display: inline-block;
+  margin-right: 0.5em;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+.modalProductPrecio {
+  font-weight: 1000;
+  font-size: 0.8em;
+  color: #000000;
+}
+
+.modalProductCantidad {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #b191dc;
+  max-height: 1.5em;
+  min-height: 2em;
+  max-width: 5em;
+  min-width: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.modalProductRestar {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.modalProductNumero {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.modalProductSumar {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.modalProductTotal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-height: 1.5em;
+  min-height: 1.5em;
+  max-width: 8em;
+  min-width: 8em;
+}
+
+.modalProductTotalPalabra {
+  text-align: center;
+  font-family: "Carter One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+.modalProductTotalNumero {
+  margin-left: 0.5em;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 0.8em;
+  color: #000000;
+}
+
+.modalProductBorrar {
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+
+.modalProductBorrar:hover {
+  transform: scale(1.5);
+}
+
+.modalFooter {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #b191dc;
+}
+
+.modalFooterButton {
+  width: 30%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #b191dc;
+  border: none;
+  box-shadow: none;
+}
+
+.modalFooterButtonPalabra {
+  font-family: "Carter One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.modalFooterButtonPalabra:hover {
+  transform: scale(1.25);
+}
+
+.modalFooterTotal {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #b191dc;
+}
+
+.modalFooterTotalPalabra {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+.modalFooterTotalNumero {
+  margin-left: 0.5em;
+  font-weight: 1000;
+  font-size: 1.25rem;
+}
+
 /* CATEGORY */
 .categories {
   display: flex;
@@ -114,6 +515,11 @@
 
 .colap {
   overflow: hidden;
+}
+
+.seccion-productos {
+  display: flex;
+  flex-direction: row;
 }
 
 .category img {

@@ -13,7 +13,7 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MichPets</title>
-    <link rel="shortcut icon" href="./assets/icons/michpets.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/michpets.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="description" value="Este pagina web se dedica a la venta y distribucion de productos de mascotas">
@@ -25,6 +25,12 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Itim&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--JS-->
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="../scripts/index.js"></script>
+    <script defer src="../scripts/cardp.js"></script>
+    <script defer src="../scripts/carrito.js"></script>
 </head>
 
 <body>
@@ -52,19 +58,20 @@
                     </form>
 
                     <div class="text-end">
-                        <button onclick="window.location.href='./pages/login.html'" type="button"
+                        <button onclick="window.location.href='./login.html'" type="button"
                             class="btn btn-outline-light me-2">Login</button>
-                        <button onclick="window.location.href='./pages/login.html'" type="button"
+                        <button onclick="window.location.href='./signup.html'" type="button"
                             class="btn btn-warning">Sign-up</button>
 
-                            <img src="../assets/img/carrito-de-compras.png" id="open-popup"></img>
-
-                        <div class="popup">
-                            <h2>Carrito</h2>
-                            <ul id="carrito"></ul>
-                            <p>Total: $<span id="total">0</span></p>
-                        </div>
-                    </div>
+                            <li class="menuItem">
+                                <a href="#carrito-id" style="text-decoration: none;">
+                                    <div id="ver-carrito" class="menuLink">
+                                        <img src="../assets/img/carrito-de-compras.png" id="open-popup"></img>
+                                        <div class="carrito1"></div>
+                                        <div class="carrito2"></div>
+                                    </div>
+                                </a>
+                            </li>
 
 
                 </div>
@@ -96,135 +103,11 @@
             </div>
         </section>
 
-        <section class="carousel">
-            <div class="container-fluid my-5">
-                <h1 class="text-center fw-bold mb-3">Productos</h1>
-                <div class="row mt-5">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida1.jpg" alt="Comida para perros marca max light"
-                                    class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA MAX ADULTO</h2>
-                                    <div class="card-body-in">
-                                        <h3>$250.200</h4>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(250000)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <h1 class="tituloProductos">Productos</h1>
 
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida2.jpg"
-                                    alt="Comida para perros marca chunky adulto sabor a pollo" class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA CHUNKY</h2>
-                                    <div class="card-body-in">
-                                        <h3>$183.500</h3>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(183500)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div id="seccion-productosp" class="seccionProductos"></div>
 
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida3.jpg" alt="Comida para perros marca dog chow"
-                                    class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA DOG CHOW</h2>
-                                    <div class="card-body-in">
-                                        <h3>$188.900</h3>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(188900)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida4.jpg" alt="Comida para perros marca hills liver care"
-                                    class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA HILLS</h2>
-                                    <div class="card-body-in">
-                                        <h3>$430.320</h3>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(430320)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida5.jpg" alt="Comida para perros marca hills science diet"
-                                    class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA HILLS</h2>
-                                    <div class="card-body-in">
-                                        <h3>$463.300</h3>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(463300)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida6.jpg" alt="Comida para perros marca nutra-nuggets"
-                                    class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA NUTRA</h2>
-                                    <div class="card-body-in">
-                                        <h3>$198.400</h3>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(198400)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida7.jpg" alt="Comida para perros marca chunky adulto"
-                                    class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA CHUNKY</h2>
-                                    <div class="card-body-in">
-                                        <h3>$119.900</h3>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(119900)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item mb-4">
-                            <div class="card border-0 shadow">
-                                <img src="../assets/img/comida8.jpg" alt="Comida para perros marca Agility gold"
-                                    class="card-img-top">
-                                <div class="card-body">
-                                    <h2>COMIDA AGILITY</h2>
-                                    <div class="card-body-in">
-                                        <h3>$56.300</h3>
-                                        <button class="btn text-light" type="submit" style="background-color: #b191dc"
-                                            type="button" onclick="agregarAlCarrito(56300)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="carrito-id" class="carritoClass"></div>
 
     </main>
     <div class="container">

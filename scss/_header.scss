@@ -27,33 +27,24 @@
     }
 
     .text-end {
+        display: flex;
+        justify-content: end;
+        justify-content: space-between;
+
 
         img {
             width: 25px;
         }
 
-        .popup {
-            display: none;
-            position: absolute;
-            top: 360px;
-            left: 88.5%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            height: 500px;
-            background-color: white;
-            border: 1px solid black;
-            padding: 20px;
+        .menuItem {
+            display: flex;
+            position: end;
         }
-
-        .popup.active {
-            display: block;
-        }
-
-
     }
 
 
 }
+
 
 .banner-prin {
     @include tam;
