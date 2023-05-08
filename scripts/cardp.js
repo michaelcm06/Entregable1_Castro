@@ -1,4 +1,3 @@
-
 const tienda = document.getElementById("seccion-productosp");
 
 comidasp.forEach((comidap) => {
@@ -43,7 +42,7 @@ comidasp.forEach((comidap) => {
                 borderTopRightRadius: '1em',
                 borderBottomLeftRadius: '1em'
             },
-            onClick: function(){}
+            onClick: function () {}
         }).showToast();
     });
 });

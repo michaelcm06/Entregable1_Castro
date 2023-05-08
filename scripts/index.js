@@ -1,6 +1,4 @@
-
-const comidas = [
-    {
+const comidas = [{
         id: 1,
         nombre: "Hills Prescription Diet Gatos",
         categoria: "ALIMENTO / GATOS / SALUDDABLE",
@@ -74,8 +72,7 @@ const comidas = [
     }
 ];
 
-const comidasp = [
-    {
+const comidasp = [{
         id: 9,
         nombre: "Max Professional Line Perros",
         categoria: "Montado",
@@ -84,7 +81,7 @@ const comidasp = [
         descipcion: "Max Professional Line Perros Adultos Light Pollo y Arroz 15 Kg",
         cantidad: 1,
     },
-        
+
     {
         id: 10,
         nombre: "Chunky Perros",
@@ -150,10 +147,3 @@ const comidasp = [
         cantidad: 1,
     },
 ];
-
-
-
-
-
-
-

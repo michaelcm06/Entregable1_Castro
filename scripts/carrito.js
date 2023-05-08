@@ -1,12 +1,11 @@
-
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const saveLocal = () => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
-const verCarrito = document.getElementById("ver-carrito"); 
-const modal = document.getElementById("carrito-id"); 
+const verCarrito = document.getElementById("ver-carrito");
+const modal = document.getElementById("carrito-id");
 
 const pintarCarrito = () => {
     modal.innerHTML = "";
@@ -133,7 +132,7 @@ const pintarCarrito = () => {
                 borderTopRightRadius: '1em',
                 borderBottomLeftRadius: '1em'
             },
-            onClick: function () { }
+            onClick: function () {}
         }).showToast();
     });
 
@@ -161,7 +160,7 @@ const pintarCarrito = () => {
                 borderTopRightRadius: '1em',
                 borderBottomLeftRadius: '1em'
             },
-            onClick: function () { }
+            onClick: function () {}
         }).showToast();
     });
 };
