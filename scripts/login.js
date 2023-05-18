@@ -22,6 +22,8 @@ function login() {
 
   if (user && user.password === password) {
     alert("¡Inicio de sesión exitoso!");
+    window.location.href = "../index.html";
+
   } else {
     alert("Nombre de usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
   }

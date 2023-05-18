@@ -1,0 +1,76 @@
+{
+    "comidas": [
+        {
+            "id": 9,
+            "nombre": "Max Professional Line Perros",
+            "categoria": "Pollo",
+            "precio": 226312,
+            "imagen": "../assets/img/comida1.jpg",
+            "descipcion": "Max Professional Line Perros Adultos Light Pollo y Arroz 15 Kg",
+            "cantidad": 1
+        },
+        {
+            "id": 10,
+            "nombre": "Chunky Perros",
+            "categoria": "Pollo",
+            "precio": 160462,
+            "imagen": "../assets/img/comida2.jpg",
+            "descipcion": "Chunky Perros Adultos Pollo 25 Kg",
+            "cantidad": 1
+        },
+        {
+            "id": 11,
+            "nombre": "Dog Chow Perros",
+            "categoria": "Carne",
+            "precio": 181106,
+            "imagen": "../assets/img/comida3.jpg",
+            "descipcion": "Dog Chow Perros Adultos Sano y en Forma Light 17 Kg",
+            "cantidad": 1
+        },
+        {
+            "id": 12,
+            "nombre": "Hills Prescription Diet Perros",
+            "categoria": "Dieta",
+            "precio": 293418,
+            "imagen": "../assets/img/comida4.jpg",
+            "descipcion": "Hills Prescription Diet Perros Kidney Care k/d 17.6 Lb",
+            "cantidad": 1
+        },
+        {
+            "id": 13,
+            "nombre": "Hills Canine adult",
+            "categoria": "Saludable",
+            "precio": 198189,
+            "imagen": "../assets/img/comida5.jpg",
+            "descipcion": "Hills Canine adult small bite 15 Lb ",
+            "cantidad": 1
+        },
+        {
+            "id": 14,
+            "nombre": "Nutra-Nuggets Perros",
+            "categoria": "Pollo",
+            "precio": 204178,
+            "imagen": "../assets/img/comida6.jpg",
+            "descipcion": "Nutra-Nuggets Perros Adultos Pollo y Arroz 15 Kg",
+            "cantidad": 1
+        },
+        {
+            "id": 15,
+            "nombre": "Chunky Perros",
+            "categoria": "Carne",
+            "precio": 140293,
+            "imagen": "../assets/img/comida7.jpg",
+            "descipcion": "Chunky Perros Adultos Cordero, Arroz y Salmón 12 Kg",
+            "cantidad": 1
+        },
+        {
+            "id": 16,
+            "nombre": "Agility Gold Perros",
+            "categoria": ["Carne", "Dieta"],
+            "precio": 132485,
+            "imagen": "../assets/img/comida8.jpg",
+            "descipcion": "Agility Gold Perros Adultos Razas Pequeñas Sin Granos 7 Kg",
+            "cantidad": 1
+        }
+    ]
+}

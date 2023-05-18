@@ -28,8 +28,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!--JS-->
     <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script defer src="../scripts/index.js"></script>
-    <script defer src="../scripts/card.js"></script>
+    <script defer src="../scripts/buscar.js"></script>
     <script defer src="../scripts/carrito.js"></script>
 </head>
 
@@ -52,16 +51,16 @@
                         <li><a href="./servicios.html" class="nav-link px-2 text-black">Servicios</a></li>
                     </ul>
 
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <form class="col-12 col-lg-3 mb-3 mb-lg-0 me-lg-3" role="search">
                         <input type="search" class="form-control form-control-dark text-bg-light"
-                            placeholder="Que Necesita tu mascota?" aria-label="Search">
+                            placeholder="Que necesita tu mascota?" aria-label="Search">
                     </form>
 
                     <div class="text-end">
                         <button onclick="window.location.href='./login.html'" type="button"
                             class="btn btn-outline-light me-2">Login</button>
                         <button onclick="window.location.href='./login.html'" type="button"
-                            class="btn btn-warning">Sign-up</button>
+                            class="btn btn-warning">Sign up</button>
 
                         <li class="menuItem">
                             <a href="#carrito-id" style="text-decoration: none;">
@@ -106,9 +105,62 @@
 
         <h1 class="tituloProductos">Productos</h1>
 
-        <div id="seccion-productos" class="seccionProductos"></div>
+        <!--COMIENZO DEL BUSCADOR-->
+        <div id="buscadorContainer">
 
-        <div id="carrito-id" class="carritoClass"></div>
+            <div id="buscador" class="buscador">
+                <label for="categoria" class="buscadorLabel">
+                    <span>Categoría</span>
+                    <select id="categoria">
+                        <option value="Todo">Todo</option>
+                        <option value="Saludable">Saludable</option>
+                        <option value="Dieta">Dietetico</option>
+                        <option value="Pollo">Sabor a pollo</option>
+                        <option value="Carne">Sabor a carne</option>
+
+                    </select>
+                </label>
+
+                <label for="ordenar" class="buscadorLabel">
+                    <span>Ordenar</span>
+                    <select id="ordenar">
+                        <option value="Todo">Todo</option>
+                        <option value="A - Z">A - Z</option>
+                        <option value="Z - A">Z - A</option>
+                    </select>
+                </label>
+
+                <label for="precio" class="buscadorLabel">
+                    <span>Precio</span>
+                    <select id="precio">
+                        <option value="Todo">Todo</option>
+                        <option value="Menor a mayor">Menor a mayor</option>
+                        <option value="Mayor a menor">Mayor a menor</option>
+                    </select>
+                </label>
+
+                <label for="buscar" class="buscadorLabel">
+                    <span>Buscar
+                    </span>
+                    <input type="text" id="buscar">
+                </label>
+            </div>
+
+        </div>
+        <!--FIN DEL BUSCADOR-->
+
+
+        <!--COMIENZO DE LISTA DE PRODUCTOS-->
+        <div id="seccion-productos" class="seccionProductos">
+            <!--Acá inserto las cards mediante Javascript-->
+        </div>
+        <!--FIN DE LISTA DE PRODUCTOS-->
+
+        <!--COMIENZO DEL MODAL DEL CARRITO-->
+        <div id="carrito-id" class="carritoClass">
+            <!--Acá inserto el modal para el carrito-->
+        </div>
+        <!--FIN DEL MODAL DEL CARRITO-->
 
     </main>
     <div class="container">
