@@ -21,7 +21,7 @@
 .modalContainer {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     height: 100vh;
 }
 
@@ -33,9 +33,12 @@
     color: #000000;
     margin: 0;
     padding-top: 100px;
-    padding-bottom: 1.5em;
+    padding-bottom: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
+    @media only screen and (max-width: 991px) {
+        padding-top: 240px; 
+    }   
 }
 
 .modalHeaderTitle {
@@ -221,13 +224,14 @@
     margin-top: auto;
     width: 100%;
     text-align: center;
+    font-size: 1px;
     background-color:  #b191dc;
 }
 
 .modalFooterButton {
-    width: 30%;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    width: 20%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     background-color:  #b191dc;
     border: none;
     box-shadow: none;
@@ -248,7 +252,7 @@
 }
 
 .modalFooterTotal {
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;

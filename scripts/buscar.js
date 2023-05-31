@@ -159,5 +159,5 @@ async function obtenerDatosJson() {
 obtenerDatosJson();
 
 
-//Mostrar los disfraces filtradose
+//Mostrar los comidas filtradose
 filtrarComidas();
